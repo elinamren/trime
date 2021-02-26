@@ -2,9 +2,11 @@
 
 function Button() {
     return (
+        <div>
         <button>
-            "Button text"
+            Button text
         </button>
+        </div>
     )
 }
 
