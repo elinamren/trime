@@ -45,14 +45,14 @@ a {
 
 .footer-container {
   position:absolute;
-  bottom: 10px;
+  bottom: 26px;
   left: 0;
   width: 100%;
   margin: auto;
 }
 
 .login-text {
-  line-height: 10px;
+  line-height: 5px;
 }
 
 /* .background-video {
