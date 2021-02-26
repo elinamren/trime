@@ -1,1 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,400&display=swap");
 
+:root {
+  --white-button: #faf8f5;
+  --yellow-button: #ffb500;
+  --light-background: #fff6ed;
+  --yellow-background: #ffb500;
+  --light-yellow-background: #ffdda9;
+}
+
+body {
+  background-color: var(--light-background);
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+button {
+  padding: 10px 60px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--white-button);
+  font-weight: 600;
+  font-size: 1.125rem;
+  width: 270px;
+  margin: 10px;
+}
