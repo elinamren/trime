@@ -1,10 +1,8 @@
 const FooterLogIn = () => {
   return (
-    <div>
-      <p>Already got an account?</p>
-      <p>
-        Login <a href="/">here</a>
-      </p>
+    <div className="footer-container">
+      <p className="login-text">Already got an account?</p>
+      <p className="login-text">Login <a href="/">here</a></p>
     </div>
   );
 };

@@ -6,18 +6,20 @@
   --light-background: #fff6ed;
   --yellow-background: #ffb500;
   --light-yellow-background: #ffdda9;
+  --green-link: #66C6BE;
 }
 
 body {
-  background-color: var(--light-background);
+  background-image: linear-gradient(var(--yellow-background) 40%, var(--light-yellow-background));
   font-family: "Open Sans", sans-serif;
   text-align: center;
+  height: 100vh;
 }
 
 button {
   padding: 10px 60px;
   border-radius: 20px;
-  border: none;
+  /* border: none; */
   background-color: var(--white-button);
   font-weight: 600;
   font-size: 1.125rem;
@@ -25,6 +27,38 @@ button {
   margin: 10px;
 }
 
+.yellow-button {
+  background-color: var(--yellow-button);
+}
+
+a {
+  color: var(--green-link);
+}
+
 .logo-container {
   margin-top: 35%;
 }
+
+.button-container {
+  margin-top: 65%;
+}
+
+.footer-container {
+  position:absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  margin: auto;
+}
+
+.login-text {
+  line-height: 10px;
+}
+
+/* .background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+} */
