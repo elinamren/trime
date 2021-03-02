@@ -6,12 +6,14 @@ import BackgroundVideo from "./components/background-video";
 function App() {
   return (
     <div className="App">
-        <Logo />
+      <Logo />
+      <div className="bottom-container">
         <div className="button-container">
-        <Button className="yellow-button" />
-        <Button />
+          <Button className="yellow-button" />
+          <Button />
         </div>
         <FooterLogIn />
+      </div>
     </div>
   );
 }
