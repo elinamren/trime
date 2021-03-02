@@ -1,10 +1,10 @@
 // import "../App.css";
 
-function Button() {
+const Button = ({text, styleClass}) => {
     return (
         <div>
-        <button>
-            Button text
+        <button className={styleClass}>
+            {text}
         </button>
         </div>
     )

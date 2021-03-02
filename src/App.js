@@ -1,7 +1,7 @@
 import Button from "./components/button";
 import FooterLogIn from "./components/footer-frontpage";
 import Logo from "./components/logo";
-import BackgroundVideo from "./components/background-video";
+//import BackgroundVideo from "./components/background-video";
 
 function App() {
   return (
@@ -9,8 +9,8 @@ function App() {
       <Logo />
       <div className="bottom-container">
         <div className="button-container">
-          <Button className="yellow-button" />
-          <Button />
+          <Button text='Im a trainee' styleClass='yellow-button' />
+          <Button text='Im a trainer' />
         </div>
         <FooterLogIn />
       </div>
