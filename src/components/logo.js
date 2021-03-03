@@ -1,10 +1,9 @@
 import logo from "../images/logo.png";
 
 const Logo = () => {
-  const logoLink = logo;
   return (
     <div className="header-container">
-      <img src={logoLink} alt="trime logotype" />
+      <img src={logo} alt="trime logotype" />
     </div>
   );
 };

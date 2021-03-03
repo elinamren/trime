@@ -1,8 +1,10 @@
+import BackArrow from "./components/back-arrow";
 import Dot from "./components/Dot";
 
 const PersonalInfo = () => {
   return (
     <div>
+      <BackArrow path="/goals"/>
       <div className="personal-info-header header-container">
         <p className="paragraph-padding">Are you ready?</p>
         <h1>

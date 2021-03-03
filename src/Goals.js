@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import BackArrow from "./components/back-arrow";
 import Button from "./components/button";
 import Dot from "./components/Dot";
 import Logo from "./components/logo";
@@ -6,6 +7,7 @@ import Logo from "./components/logo";
 const Goals = () => {
     return ( 
         <div>
+            <BackArrow path="/"/>
             <Logo />
             <div className="bottom-container">
                 <p className="paragraph-padding">What is your main goal?</p>
