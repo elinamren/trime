@@ -1,20 +1,21 @@
-import Button from "./components/button";
-import FooterLogIn from "./components/footer-frontpage";
-import Logo from "./components/logo";
-//import BackgroundVideo from "./components/background-video";
+import StarterScreen from "./Starter-screen";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Goals from "./Goals";
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <Logo />
-      <div className="bottom-container">
-        <div className="button-container">
-          <Button text='Im a trainee' styleClass='yellow-button' />
-          <Button text='Im a trainer' />
-        </div>
-        <FooterLogIn />
-      </div>
+      <Switch>
+        <Route exact path="/">
+          <StarterScreen />
+        </Route>
+        <Route path="/goals">
+          <Goals />
+        </Route>
+      </Switch>
     </div>
+    </Router>
   );
 }
 
