@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "./components/button";
 import FooterLogIn from "./components/footer-frontpage";
 import Logo from "./components/logo";
@@ -9,8 +10,8 @@ function StarterScreen() {
       <Logo />
       <div className="bottom-container">
         <div className="button-container">
-          <Button text='Im a trainee' styleClass='yellow-button' />
-          <Button text='Im a trainer' />
+          <Link to="/goals"><Button text='Im a trainee' styleClass='yellow-button' /></Link>
+          <Link to="/goals"><Button text='Im a trainer' /></Link>
         </div>
         <FooterLogIn />
       </div>

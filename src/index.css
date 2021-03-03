@@ -145,9 +145,17 @@ input {
   border: 1px solid var(--yellow-button);
 }
 
+.terms-container input:checked ~ .checkmark {
+  background-color: var(--yellow-button);
+}
+
 #terms {
   width: fit-content;
   margin-right: 5px;
+}
+
+.large-margin-top {
+  margin-top: 53px;
 }
 
 /* .background-video {

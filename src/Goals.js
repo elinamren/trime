@@ -1,6 +1,7 @@
-import Button from "./components/button"
-import Dot from "./components/Dot"
-import Logo from "./components/logo"
+import { Link } from "react-router-dom";
+import Button from "./components/button";
+import Dot from "./components/Dot";
+import Logo from "./components/logo";
 
 const Goals = () => {
     return ( 
@@ -8,11 +9,11 @@ const Goals = () => {
             <Logo />
             <div className="bottom-container">
                 <p className="paragraph-padding">What is your main goal?</p>
-                <Button text="Stay healty"/>
-                <Button text="Gain weight"/>
-                <Button text="Loose weight"/>
-                <Button text="Compete"/>
-                <Button text="Endurance"/>
+                <Link to="/create-account"><Button text="Stay healty"/></Link>
+                <Link to="/create-account"><Button text="Gain weight"/></Link>
+                <Link to="/create-account"><Button text="Loose weight"/></Link>
+                <Link to="/create-account"><Button text="Compete"/></Link>
+                <Link to="/create-account"><Button text="Endurance"/></Link>
                 <div className="page-dots">
                     <Dot color="yellow-button" />
                     <Dot color="white-button"/>

@@ -17,21 +17,21 @@ const PersonalInfo = () => {
         <form>
           <input type="text" name="name" id="name" placeholder="Name..." />
           <input type="text" name="city" id="city" placeholder="City..." />
-          <input type="text" name="email" id="email" placeholder="Email..." />
+          <input type="email" name="email" id="email" placeholder="Email..." />
           <input
-            type="text"
+            type="password"
             name="password"
             id="password"
             placeholder="Password..."
           />
 
-          <label className="terms-container" for="terms">
+          <label className="terms-container" htmlFor="terms">
             I agree to the <a href="/">terms of service</a> and{" "}
             <a href="/">privacy policy</a>
             <input type="checkbox" name="terms" id="terms" />
             <span className="checkmark"></span>
           </label>
-          <button type="submit" className="yellow-button">
+          <button type="submit" className="yellow-button large-margin-top">
             Create account
           </button>
         </form>
