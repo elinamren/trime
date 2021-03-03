@@ -3,7 +3,7 @@ import logo from "../images/logo.png";
 const Logo = () => {
   const logoLink = logo;
   return (
-    <div className="logo-container">
+    <div className="header-container">
       <img src={logoLink} alt="trime logotype" />
     </div>
   );

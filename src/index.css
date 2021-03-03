@@ -7,6 +7,8 @@
   --yellow-background: #ffb500;
   --light-yellow-background: #ffdda9;
   --green-link: #66c6be;
+  --light-grey-border: rgba(147, 147, 147, 0.6);
+  --dark-grey-text: rgba(18, 18, 18, 0.95);
 }
 
 * {
@@ -22,6 +24,11 @@ body {
   );
   font-family: "Open Sans", sans-serif;
   text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 3rem;
 }
 
 button {
@@ -54,7 +61,7 @@ a {
   color: var(--green-link);
 }
 
-.logo-container {
+.header-container {
   padding-top: 35%;
 }
 
@@ -75,6 +82,7 @@ a {
   height: 1px;
   width: 1px;
   border-radius: 20px;
+  border: 1px solid var(--yellow-button);
   box-shadow: 5px 8px 5px rgba(144, 144, 144, 0.2);
   display: inline-block;
   margin: 20% 5px 0px 5px;
@@ -82,6 +90,64 @@ a {
 
 .paragraph-padding {
   padding-bottom: 10px;
+}
+
+/* PERSONAL INFO SCREEN */
+
+.form-container {
+  background-color: var(--light-background);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 50px 50px 26px 50px;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  margin: auto;
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--light-grey-border);
+  color: var(--dark-grey-text);
+  background-color: var(--light-background);
+  margin-top: 20px;
+  font-size: 0.8125rem;
+}
+
+.terms-container {
+  font-size: 0.625rem;
+  display: block;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 31px;
+}
+
+.terms-container input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: var(--light-background);
+  border: 1px solid var(--yellow-button);
+}
+
+#terms {
+  width: fit-content;
+  margin-right: 5px;
 }
 
 /* .background-video {
