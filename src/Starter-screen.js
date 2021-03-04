@@ -7,6 +7,7 @@ import BackgroundVideo from "./components/background-video";
 function StarterScreen() {
   return (
     <div className="starter-screen">
+      <div className="overlay"></div>
       <BackgroundVideo />
       <Logo />
       <div className="bottom-container">

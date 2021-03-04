@@ -69,7 +69,7 @@ a {
 
 .header-container {
   position: fixed;
-  top: 20%;
+  top: 15%;
   left: 0;
   width: 100%;
   margin: auto;
@@ -89,7 +89,7 @@ a {
 
 .footer-container {
   padding-top: 15%;
-  color: var(--brown-text);
+  color: var(--white-button);
 }
 
 .dot {
@@ -187,19 +187,29 @@ input {
   position: fixed;
   right: 0;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100vw;
+  height: 100vh;
   object-fit: fill;
   overflow: hidden;
+  z-index: -3;
 }
 
 #background-video video {
-  min-width: 100%;
-  min-height: 100%;
-  /* width: auto;
-  height: auto; */
+  min-width: 100vw;
+  height: 100vh;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.overlay {
+  position: fixed;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(#ffdda9ca, rgba(0, 0, 0, 0.445));
 }
