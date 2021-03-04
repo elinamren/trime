@@ -10,6 +10,7 @@
   --light-grey-border: rgba(147, 147, 147, 0.6);
   --dark-grey-text: rgba(18, 18, 18, 0.95);
   --brown-text: #785f23;
+  --trime-font: "Open Sans", sans-serif;
 }
 
 * {
@@ -23,7 +24,7 @@ body {
     var(--yellow-background) 40%,
     var(--light-yellow-background)
   );
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--trime-font);
   text-align: center;
 }
 
@@ -43,7 +44,7 @@ button {
   width: 270px;
   margin: 10px;
   letter-spacing: 0.5px;
-  font-family: "Open Sans";
+  font-family: var(--trime-font);
 }
 
 .App {
@@ -131,14 +132,25 @@ a {
   margin: auto;
 }
 
+.field-container {
+  text-align: left;
+}
+
+.form-heading {
+  font-size: 0.8125rem;
+  width: 100%;
+  color: #785f23c4;
+}
+
 input {
   width: 100%;
   border: none;
   border-bottom: 1px solid var(--light-grey-border);
-  color: var(--dark-grey-text);
   background-color: var(--light-background);
-  margin-top: 20px;
-  font-size: 0.8125rem;
+  color: var(--dark-grey-text);
+  font-family: var(--trime-font);
+  font-size: 0.875rem;
+  margin-bottom: 5px;
 }
 
 .terms-container {
