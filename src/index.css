@@ -68,7 +68,11 @@ a {
 }
 
 .header-container {
-  padding-top: 35%;
+  position: fixed;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  margin: auto;
 }
 
 .personal-info-header {
@@ -179,10 +183,23 @@ input {
   margin-top: 53px;
 }
 
-/* .background-video {
+#background-video {
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-} */
+  object-fit: fill;
+  overflow: hidden;
+}
+
+#background-video video {
+  min-width: 100%;
+  min-height: 100%;
+  /* width: auto;
+  height: auto; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

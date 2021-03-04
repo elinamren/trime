@@ -1,12 +1,13 @@
+import video from "../images/pt-video.mp4";
+
 const BackgroundVideo = () => {
-    return (       
-    <video autoplay muted loop id="background-video">
-    <source
-      src="../images/pt-video.mp4"
-      type="video/mp4"
-    />
-  </video> 
+  return (
+    <div id="background-video">
+      <video autoplay muted loop>
+        <source src={video} type="video/mp4" />
+      </video>
+    </div>
   );
-}
- 
+};
+
 export default BackgroundVideo;
