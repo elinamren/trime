@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import backarrow from "../images/backarrow.png"
 
-const BackArrow = ({path}) => {
+const BackArrow = (props) => {
     return ( 
-        <Link to={path} className="back-arrow">
+        <Link to={props.path} className="back-arrow">
         <img src={backarrow} alt="Back arrow" />
         </Link>
      );

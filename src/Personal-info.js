@@ -5,7 +5,7 @@ const PersonalInfo = () => {
   return (
     <div>
       <BackArrow path="/goals"/>
-      <div className="personal-info-header header-container">
+      <div className="personal-info-header">
         <p className="paragraph-padding">Are you ready?</p>
         <h1>
           It's

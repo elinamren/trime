@@ -1,10 +1,10 @@
 // import "../App.css";
 
-const Button = ({text, styleClass}) => {
+const Button = (props) => {
     return (
         <div>
-        <button className={styleClass}>
-            {text}
+        <button className={props.styleClass}>
+            {props.text}
         </button>
         </div>
     )

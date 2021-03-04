@@ -9,6 +9,7 @@
   --green-link: #66c6be;
   --light-grey-border: rgba(147, 147, 147, 0.6);
   --dark-grey-text: rgba(18, 18, 18, 0.95);
+  --brown-text: #785f23;
 }
 
 * {
@@ -42,6 +43,7 @@ button {
   width: 270px;
   margin: 10px;
   letter-spacing: 0.5px;
+  font-family: "Open Sans";
 }
 
 .App {
@@ -57,12 +59,20 @@ button {
   background-color: var(--white-button);
 }
 
+.brown-text {
+  color: var(--brown-text);
+}
+
 a {
   color: var(--green-link);
 }
 
 .header-container {
   padding-top: 35%;
+}
+
+.personal-info-header {
+  padding-top: 25%;
 }
 
 .bottom-container {
@@ -75,6 +85,7 @@ a {
 
 .footer-container {
   padding-top: 15%;
+  color: var(--brown-text);
 }
 
 .dot {
