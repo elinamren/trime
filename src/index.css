@@ -99,7 +99,7 @@ a {
   width: 1px;
   border-radius: 20px;
   border: 1px solid var(--yellow-button);
-  box-shadow: 5px 8px 5px rgba(144, 144, 144, 0.2);
+  box-shadow: 2px 5px 4px rgba(144, 144, 144, 0.2);
   display: inline-block;
   margin: 20% 5px 0px 5px;
 }
