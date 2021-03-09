@@ -1,14 +1,21 @@
 const SuccessBox = () => {
-
-
+  let modal = document.getElementsByClassName("modal");
   function handleClick(e) {
     e.preventDefault();
+
     if (e.target.id === "go-to-profile") {
-      console.log("first button clicked")
+      console.log("first button clicked");
     } else {
-      console.log("other button clicked")
-    };
+      modal[0].style.display = "none";
+    }
   }
+
+  window.onclick = function (event) {
+    if (event.target === modal[0]) {
+      modal[0].style.display = "none";
+    }
+  };
+
   return (
     <div className="modal">
       <div className="modal-content">
@@ -28,10 +35,10 @@ const SuccessBox = () => {
         >
           Go to profile
         </button>
-        <button 
-        onClick={handleClick} 
-        className="small-button"
-        id="close-window"
+        <button
+          onClick={handleClick}
+          className="small-button"
+          id="close-window"
         >
           Let's explore
         </button>
