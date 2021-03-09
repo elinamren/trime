@@ -1,11 +1,14 @@
+import Button from './button'
+
 const SuccessBox = () => {
   let modal = document.getElementsByClassName("modal");
   function handleClick(e) {
     e.preventDefault();
 
     if (e.target.id === "go-to-profile") {
-      console.log("first button clicked");
+      console.log(e);
     } else {
+      console.log(e);
       modal[0].style.display = "none";
     }
   }
@@ -28,20 +31,18 @@ const SuccessBox = () => {
           don't need to fill out this right now if you don't want to. Just close
           this window and Let's go explore the app!
         </p>
-        <button
+        <Button
           onClick={handleClick}
-          className="small-button not-important-button"
+          styleClass="not-important-button"
           id="go-to-profile"
-        >
-          Go to profile
-        </button>
-        <button
+          text="Edit profile"
+        />
+        <Button
           onClick={handleClick}
-          className="small-button"
+          styleClass="yellow-button"
           id="close-window"
-        >
-          Let's explore
-        </button>
+          text="Let's explore"
+        />
       </div>
     </div>
   );

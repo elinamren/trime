@@ -7,7 +7,7 @@ const Home = () => {
     <div className="home-container">
       <SuccessBox />
       <Nav />
-      <Menu />
+      {/* <Menu /> */}
     </div>
   );
 };

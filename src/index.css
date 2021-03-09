@@ -291,14 +291,6 @@ nav {
   margin-right: 15px;
 }
 
-.small-button {
-  padding: 10px 10px;
-  width: 100px;
-  font-size: 0.75rem;
-  /* border: 2px solid black; */
-}
-
 .not-important-button {
-  background-color: #ffffff00;
-  border: 2px solid var(--light-grey-border);
+  background-color: var(--white-button);
 }
