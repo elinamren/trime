@@ -47,6 +47,24 @@ button {
   font-family: var(--trime-font);
 }
 
+nav {
+  background-color: var(--light-background);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px -1px 3px rgba(144, 144, 144, 0.2);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  list-style-type: none;
+  padding: 10px 5px 5px 5px;
+}
+
 .App {
   position: relative;
   height: 100vh;
