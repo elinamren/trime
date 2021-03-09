@@ -2,6 +2,7 @@ import StarterScreen from "./Starter-screen";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Goals from "./Goals";
 import PersonalInfo from "./Personal-info";
+import Home from "./Home";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
           </Route>
           <Route path="/create-account">
             <PersonalInfo />
+          </Route>
+          <Route path="/home">
+            <Home />
           </Route>
         </Switch>
       </div>
