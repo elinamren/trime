@@ -1,4 +1,4 @@
-import Button from './button'
+import Button from "./button";
 
 const SuccessBox = () => {
   let modal = document.getElementsByClassName("modal");
@@ -22,27 +22,29 @@ const SuccessBox = () => {
   return (
     <div className="modal">
       <div className="modal-content">
-        <h3>
+        <h2>
           Welcome to Trime, <br />
-          Happy to have you onboard!
-        </h3>
+          it's training time!
+        </h2>
         <p>
           To book a session we need a little more information from you, but you
           don't need to fill out this right now if you don't want to. Just close
-          this window and Let's go explore the app!
+          this window and let's go explore the app!
         </p>
-        <Button
-          onClick={handleClick}
-          styleClass="not-important-button"
-          id="go-to-profile"
-          text="Edit profile"
-        />
-        <Button
-          onClick={handleClick}
-          styleClass="yellow-button"
-          id="close-window"
-          text="Let's explore"
-        />
+        <div className="modal-button-container">
+          <Button
+            onClick={handleClick}
+            styleClass="not-important-button small-button"
+            id="go-to-profile"
+            text="Edit profile"
+          />
+          <Button
+            onClick={handleClick}
+            styleClass="yellow-button small-button"
+            id="close-window"
+            text="Let's explore"
+          />
+        </div>
       </div>
     </div>
   );
