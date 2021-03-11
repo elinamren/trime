@@ -118,6 +118,17 @@ a {
   width: 20px;
 }
 
+.pressed-animation {
+  animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+  0% {color: black; }
+  50% { background-color: var(--yellow-button); color: black;}
+  100% {color: black; }
+}
+
+
 /* PERSONAL INFO SCREEN */
 
 .form-container {
@@ -294,3 +305,5 @@ nav {
 .not-important-button {
   background-color: var(--white-button);
 }
+
+

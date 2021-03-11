@@ -1,6 +1,6 @@
 import SuccessBox from "./components/SuccessBox";
 import Nav from "./components/Nav";
-import Menu from "./components/Menu";
+// import Menu from "./components/Menu";
 
 const Home = () => {
   return (
