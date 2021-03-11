@@ -1,6 +1,12 @@
 import BackArrow from "./components/back-arrow";
 import Dot from "./components/Dot";
 
+function createAccount(e) {
+  e.preventDefault();
+  console.log(e);
+  window.location.href = "/home";
+}
+
 const PersonalInfo = () => {
   return (
     <div>
@@ -41,7 +47,11 @@ const PersonalInfo = () => {
             <input type="checkbox" name="terms" id="terms" />
             <span className="checkmark"></span>
           </label>
-          <button type="submit" className="yellow-button large-margin-top">
+          <button
+            onClick={createAccount}
+            type="submit"
+            className="yellow-button large-margin-top"
+          >
             Create account
           </button>
         </form>
