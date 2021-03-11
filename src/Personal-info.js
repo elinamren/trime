@@ -1,13 +1,23 @@
+import { useState } from "react";
 import BackArrow from "./components/back-arrow";
 import Dot from "./components/Dot";
 
-function createAccount(e) {
-  e.preventDefault();
-  console.log(e);
-  window.location.href = "/home";
-}
 
 const PersonalInfo = () => {
+
+  const [name, setName] = useState("");
+  const [city, setCity] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [terms, setTerms] = useState("")
+
+  function createAccount(e) {
+    e.preventDefault();
+    const account = {name, city, email, password, terms}
+    console.log(account);
+    window.location.href = "/home";
+  }
+
   return (
     <div>
       <BackArrow path="/goals" />
@@ -22,29 +32,60 @@ const PersonalInfo = () => {
         </h1>
       </div>
       <div className="form-container">
-        <form>
+        <form onSubmit={createAccount}>
           <div className="field-container">
             <label className="form-heading" htmlFor="name">
               Name
             </label>
-            <input type="text" name="name" id="name" />
+            <input 
+            type="text"
+            name="name"
+            id="name" 
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            />
             <label className="form-heading" htmlFor="city">
               City
             </label>
-            <input type="text" name="city" id="city" />
+            <input 
+            type="text" 
+            name="city" 
+            id="city"
+            value={city}
+            onChange={(e) => setCity(e.target.value)}
+            />
             <label className="form-heading" htmlFor="email">
               Email
             </label>
-            <input type="email" name="email" id="email" />
+            <input 
+            type="email" 
+            name="email" 
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)} 
+            />
             <label className="form-heading" htmlFor="password">
               Password
             </label>
-            <input type="password" name="password" id="password" />
+            <input 
+            type="password" 
+            name="password" 
+            id="password"
+            required
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            />
           </div>
           <label className="terms-container" htmlFor="terms">
             I agree to the <a href="/">terms of service</a> and{" "}
             <a href="/">privacy policy</a>
-            <input type="checkbox" name="terms" id="terms" />
+            <input 
+            type="checkbox" 
+            name="terms" 
+            id="terms" 
+            value={terms} 
+            onChange={(e) => setTerms(e.target.checked)}
+            />
             <span className="checkmark"></span>
           </label>
           <button
