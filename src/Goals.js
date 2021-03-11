@@ -8,7 +8,7 @@ const Goals = () => {
     e.target.classList.add("pressed-animation");
     setTimeout(() => {
       window.location.href = "/create-account";
-    }, 1000);
+    }, 500);
   }
   return (
     <div>

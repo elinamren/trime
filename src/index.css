@@ -119,7 +119,7 @@ a {
 }
 
 .pressed-animation {
-  animation: blink 0.5s infinite;
+  animation: blink 0.38s infinite;
 }
 
 @keyframes blink {
