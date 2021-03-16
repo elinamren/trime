@@ -9,16 +9,16 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/trime-app">
             <StarterScreen />
           </Route>
-          <Route path="/goals">
+          <Route path="/trime-app/goals">
             <Goals />
           </Route>
-          <Route path="/create-account">
+          <Route path="/trime-app/create-account">
             <PersonalInfo />
           </Route>
-          <Route path="/home">
+          <Route path="/trime-app/home">
             <Home />
           </Route>
         </Switch>
