@@ -11,7 +11,7 @@ import Home from "./Home";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="App">
         <Switch>
           <Route exact path="/">
@@ -28,7 +28,7 @@ function App() {
           </Route>
         </Switch>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
