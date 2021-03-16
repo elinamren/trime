@@ -9,7 +9,7 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route exact path="/trime-app">
+          <Route exact path="/">
             <StarterScreen />
           </Route>
           <Route path="/goals">

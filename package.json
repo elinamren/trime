@@ -1,6 +1,6 @@
 {
-  "homepage": "https://elinamren.github.io/trime-app",
   "name": "trime-app",
+  "homepage": "https://elinamren.github.io/trime-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
