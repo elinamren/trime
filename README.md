@@ -1,5 +1,5 @@
 # Hyper Island Code and Collaborate Project - FED and UX
-Trime training app
+Client - Trime training app
 
 ## Demo
 View the page at
