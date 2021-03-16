@@ -13,14 +13,14 @@ We developed the new sign in process for Trime that is now shorter and having a 
 By this bew sign up process Trime will create curiosity and trust which will lead to more finished signups and an overall better user experience.
 
 ### Team Members
-Maria Hiertonn - UX
-Simon Sjödin - UX
-Cecilia Hallerby - FED
+Maria Hiertonn - UX  
+Simon Sjödin - UX  
+Cecilia Hallerby - FED  
 Elin Amrén - FED
 
 ### Tools
-Miro
-Figma
+Miro  
+Figma  
 Reactjs
 
 
