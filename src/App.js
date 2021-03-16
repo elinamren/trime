@@ -12,13 +12,13 @@ function App() {
           <Route exact path="/trime-app">
             <StarterScreen />
           </Route>
-          <Route path="/trime-app/goals">
+          <Route path="/goals">
             <Goals />
           </Route>
-          <Route path="/trime-app/create-account">
+          <Route path="/create-account">
             <PersonalInfo />
           </Route>
-          <Route path="/trime-app/home">
+          <Route path="/home">
             <Home />
           </Route>
         </Switch>
