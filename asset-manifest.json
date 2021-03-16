@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/trime-app/static/css/main.b08b94e0.chunk.css",
+    "main.js": "/trime-app/static/js/main.e9ecd804.chunk.js",
+    "main.js.map": "/trime-app/static/js/main.e9ecd804.chunk.js.map",
+    "runtime-main.js": "/trime-app/static/js/runtime-main.6e1a1a32.js",
+    "runtime-main.js.map": "/trime-app/static/js/runtime-main.6e1a1a32.js.map",
+    "static/js/2.6b972917.chunk.js": "/trime-app/static/js/2.6b972917.chunk.js",
+    "static/js/2.6b972917.chunk.js.map": "/trime-app/static/js/2.6b972917.chunk.js.map",
+    "index.html": "/trime-app/index.html",
+    "static/css/main.b08b94e0.chunk.css.map": "/trime-app/static/css/main.b08b94e0.chunk.css.map",
+    "static/js/2.6b972917.chunk.js.LICENSE.txt": "/trime-app/static/js/2.6b972917.chunk.js.LICENSE.txt",
+    "static/media/logo.c9806e06.png": "/trime-app/static/media/logo.c9806e06.png",
+    "static/media/index.css": "/trime-app/static/media/map.64dd1b99.png",
+    "static/media/pt-video.80fd6f81.mp4": "/trime-app/static/media/pt-video.80fd6f81.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6e1a1a32.js",
+    "static/js/2.6b972917.chunk.js",
+    "static/css/main.b08b94e0.chunk.css",
+    "static/js/main.e9ecd804.chunk.js"
+  ]
+}
