@@ -12,10 +12,10 @@ function StarterScreen() {
       <Logo />
       <div className="bottom-container">
         <div className="button-container">
-          <Link to="/goals">
+          <Link to="goals">
             <Button text="Im a trainee" styleClass="yellow-button" />
           </Link>
-          <Link to="/goals">
+          <Link to="goals">
             <Button text="Im a trainer" />
           </Link>
         </div>
