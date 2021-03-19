@@ -10,7 +10,7 @@ import Home from "./Home";
 
 function App() {
   return (
-    <Router basename="/trime">
+    <Router>
       <div className="App">
         <Switch>
           <Route exact path="/">
