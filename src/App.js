@@ -1,7 +1,6 @@
 import StarterScreen from "./Starter-screen";
 import {
   BrowserRouter as Router,
-  HashRouter,
   Route,
   Switch,
 } from "react-router-dom";
@@ -11,7 +10,7 @@ import Home from "./Home";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/trime">
       <div className="App">
         <Switch>
           <Route exact path="/">
